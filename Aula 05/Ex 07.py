@@ -5,5 +5,6 @@
 result = 0
 for x in range(5):
     number = int(input("Digite aqui um número: "))
-    result = (number * 5)/5
-print(f"A média dos números é: {result}")
+    result = result + number
+media = result/5
+print(f"A média dos números é: {media}")
