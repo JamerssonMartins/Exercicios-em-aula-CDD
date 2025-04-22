@@ -1,4 +1,7 @@
-SalMin = 1518 #Salário mínimo
-SalAtual = float(input("Digite seu salário atual: "))
-result = SalAtual / SalMin
-print(f"{result:.2f}")
+SalMin = float(input("Digite o salário mínimo: ")) #Salário mínimo
+SalAtual = float(input("Digite seu salário atual: ")) #Salário atual
+while SalAtual != 0:
+    result = SalAtual / SalMin
+    print(f"Você recebe {result:.1f}x do salário mínimo")
+    SalAtual = float(input("Digite seu salário atual: "))
+print("Programa encerrado")
