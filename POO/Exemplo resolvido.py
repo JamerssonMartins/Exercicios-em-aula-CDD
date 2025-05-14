@@ -1,4 +1,4 @@
-from Biblioteca01 import Pessoa
+from Bibliotecaresolvido import Pessoa
 # Exemplo de uso:
 if __name__ == "__main__":
     usuario = Pessoa("Carlos")
