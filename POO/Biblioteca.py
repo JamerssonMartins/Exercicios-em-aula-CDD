@@ -85,7 +85,14 @@ class Retangulo(Forma):
         self.perimetro = (base+altura) * 2
         print(f"p perimetro do retangulo é {self.perimetro}")
 
-
-#class Triangulo(Forma):
-#    def __init__(self,lado,base,altura):
-
+class Triangulo(Forma):
+    def __init__(self,base,altura):
+        super().__init__()
+        self.altura = altura
+        self.base = base
+    def calculoarea(self):
+        self.area = (self.base * self.altura)/2
+        print(f"A area do triangulo é {self.area}")
+    def calculoperimetro(self):
+        self.perimetro = self.base*3
+        print(f"P perimetro do triangulo é {self.perimetro}")
